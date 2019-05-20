@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Close This Tab</title>
     <script type="text/javascript">
-       open(location, '_self').close();
+	var objWindow = window.open(location.href, "_self");
+  	objWindow.close();
     </script>
 </head>
 <body>
